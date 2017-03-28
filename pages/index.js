@@ -1,5 +1,7 @@
 import Head from 'next/head';
 
+import Button from '../components/button';
+
 
 export default function IndexPage() {
   return (
@@ -10,7 +12,13 @@ export default function IndexPage() {
       </Head>
 
       <main className="container my-5">
-        Hello world
+        <p>
+          Hello world
+        </p>
+
+        <Button>
+          Plain old button
+        </Button>
       </main>
     </div>
   );
