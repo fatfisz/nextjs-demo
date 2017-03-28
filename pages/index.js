@@ -12,7 +12,7 @@ export default function IndexPage() {
       </Head>
 
       <main className="container my-5">
-        <p>
+        <p className="special">
           Hello world
         </p>
 
@@ -20,6 +20,12 @@ export default function IndexPage() {
           Plain old button
         </Button>
       </main>
+
+      <style jsx>{`
+        .special {
+          font-style: italic;
+        }
+      `}</style>
     </div>
   );
 }
