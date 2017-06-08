@@ -3,5 +3,10 @@
     "next": "3.0.0-beta6",
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
   }
 }
