@@ -19,6 +19,11 @@ app.prepare().then(() => {
     await next();
   });
 
+  router.get('/blog/:id', async (ctx) => {
+    ctx.respond = false;
+    await app.render(ctx.req, ctx.res, '/blog', ctx.params);
+  });
+
   router.get('*', async (ctx) => {
     ctx.respond = false;
     await handle(ctx.req, ctx.res);

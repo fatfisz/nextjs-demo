@@ -30,6 +30,9 @@ export default function Layout({ children, url }) {
             <WrappedLink href="/another" isActive={pathname === '/another'}>
               Another
             </WrappedLink>
+            <WrappedLink href="/blog" isActive={pathname === '/blog'}>
+              Blog
+            </WrappedLink>
           </div>
         </div>
       </nav>
