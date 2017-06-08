@@ -1,17 +1,16 @@
 import Head from 'next/head';
 
+import Layout from 'components/layout';
 
-export default function AnotherPage() {
+
+export default function AnotherPage(props) {
   return (
-    <div>
+    <Layout {...props}>
       <Head>
         <title>Another - Next.js demo</title>
-        <link rel="stylesheet" href="/static/bootstrap.min.css" />
       </Head>
 
-      <main className="container my-5">
-        This is another page
-      </main>
-    </div>
+      This is another page
+    </Layout>
   );
 }

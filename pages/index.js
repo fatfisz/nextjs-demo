@@ -1,31 +1,29 @@
 import Head from 'next/head';
 
 import Button from 'components/button';
+import Layout from 'components/layout';
 
 
-export default function IndexPage() {
+export default function IndexPage(props) {
   return (
-    <div>
+    <Layout {...props}>
       <Head>
         <title>Index - Next.js demo</title>
-        <link rel="stylesheet" href="/static/bootstrap.min.css" />
       </Head>
 
-      <main className="container my-5">
-        <p className="special">
-          Hello world
-        </p>
+      <p className="special">
+        Hello world
+      </p>
 
-        <Button>
-          Plain old button
-        </Button>
-      </main>
+      <Button>
+        Plain old button
+      </Button>
 
       <style jsx>{`
         .special {
           font-style: italic;
         }
       `}</style>
-    </div>
+    </Layout>
   );
 }
